@@ -1,0 +1,133 @@
+:root{
+    --main: #2ad883;
+    --dark: #171c22;
+    --light: #29323b;
+}
+body{
+    background-color: var(--dark);
+    font-family: "Cairo", sans-serif;
+}
+::selection{
+    background-color: var(--main);
+    color: var(--dark);
+}
+.form{
+    display: flex;
+    margin: 20px auto;
+    width: 450px;
+    font-weight: 500;
+    justify-content: space-between;
+    background-color: var(--light);
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+.form .add,
+.form .clear{
+    padding: 0 15px;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .15s;
+
+}
+.form .input{
+    width: 245px;
+    background-color: #eee;
+    outline: 0;
+    padding: 10px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+
+}
+.form .add{
+    background-color: var(--main);
+    border: 2px solid var(--main);
+
+}
+.form .add:hover{
+    color: var(--main);
+    background-color: var(--light);
+    border: 2px solid var(--main);
+
+}
+.form .clear{
+    color: var(--main);
+    background-color: var(--light);
+    border: 2px solid var(--main);
+
+}
+.form .clear:hover{
+    color: var(--dark);
+    background-color: var(--main);
+    border: 2px solid var(--main);
+
+}
+
+.tasks h1{
+    font-size: 20px;
+    max-width: 272px;
+}
+.task span{
+    padding: 1px 10px;
+    opacity: 0;
+    transition: .15s;
+    position: absolute;
+    right: 9px;
+    font-weight: 800;
+    background-color: var(--main);
+    color: var(--dark);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tasks{
+    margin: 5%;
+    padding: 1% 2%;
+}
+.tasks .task{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light);
+    border-radius: 5px;
+    color: var(--main);
+    font-weight: bold;
+    min-height: 50px;
+    padding: 0 10px;
+    margin: 15px 0;
+    transition: .15s;
+    overflow: hidden;
+
+}
+.tasks .task:hover span{
+    opacity: 100%;
+}
+.done span{
+    background-color: var(--light);
+    color: var(--main);
+}
+.tasks .done{
+    background-color: var(--main);
+    color: var(--dark);
+    text-decoration: line-through;
+}
+
+@media (max-width:786px) {
+    .form{
+        width: 320px;
+    }
+    .form .input{
+        width: 160px;
+    }
+    .form .add,
+    .form .clear{
+        font-size: 11px;
+        padding: 0 8px;
+    }
+    .task span{
+        font-size: 12px;
+        /* opacity: 100%; */
+    }
+
+}
