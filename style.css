@@ -93,8 +93,8 @@ body{
     border-radius: 5px;
     color: var(--main);
     font-weight: bold;
-    min-height: 50px;
-    padding: 0 10px;
+    min-height: 30px;
+    padding: 10px 60px 10px 10px;
     margin: 15px 0;
     transition: .15s;
     overflow: hidden;
@@ -127,7 +127,7 @@ body{
     }
     .task span{
         font-size: 12px;
-        /* opacity: 100%; */
+        opacity: 100%;
     }
 
 }
