@@ -115,10 +115,10 @@ body{
 
 @media (max-width:786px) {
     .form{
-        width: 320px;
+        width: 315px;
     }
     .form .input{
-        width: 160px;
+        width: 150px;
     }
     .form .add,
     .form .clear{
